@@ -1,5 +1,16 @@
 # Retool changelog
 
+All notable changes to this project are documented in this file. This changelog is based
+on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) principles, and this project
+uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## Unreleased
+
+-   **_Change_**: Added `AGENTS.md` with house rules for AI-assisted contribution
+    planning, workflow support, branch-based development, Conventional Commits, and
+    Semantic Versioning.
+
+
 ## 2.4.9 (2026-03-14)
 
 -   **_Feature_**: You can now exclude titles with the following classification tags by
