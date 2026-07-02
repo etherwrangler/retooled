@@ -1,0 +1,65 @@
+---
+name: Bug report
+type: Bug
+description: Report an issue
+labels: ["type: bug", "status: needs triage"]
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a clear and concise description of the issue or bug you encountered
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: How can this issue be reproduced.  Please include any screenshots of the issue or what commands you ran.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What is the expected behavior?
+    validations:
+      required: false
+  - type: checkboxes
+    id: os
+    attributes:
+      label: Which operating systems did you encounter this on?
+      description: You may select more than one.
+      options:
+        - label: Linux - list distro below
+        - label: macOS
+        - label: Windows 10
+        - label: Windows 11
+    validations:
+      required: true
+  - type: checkboxes
+    id: edition
+    attributes:
+      label: Which edition of retool were you running?
+      description: You may select more than one.
+      options:
+        - label: retoolgui.exe
+        - label: retool.py
+        - label: retoolgui.py
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Retooled version
+      description: What version number of Retooled are you running?
+    validations:
+      required: true
+  - type: textarea
+    id: other-information
+    attributes:
+      label: Other Information
+      description: Is there any other information you can or would like to provide?
+    validations:
+      required: false
