@@ -1,6 +1,5 @@
 ---
 name: Bug report
-type: Bug
 description: Report an issue
 labels: ["type: bug", "status: needs triage"]
 title: "[Bug]: "
