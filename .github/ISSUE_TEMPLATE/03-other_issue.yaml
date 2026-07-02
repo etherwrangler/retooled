@@ -1,6 +1,5 @@
 ---
 name: Other
-type: Issue
 description: Any issue that is not a feature or bug
 labels: ["type: other", "status: needs triage"]
 title: "[Other]: "
