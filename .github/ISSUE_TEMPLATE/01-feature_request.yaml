@@ -1,0 +1,23 @@
+---
+name: Feature Request
+type: Feature
+description: Propose a new feature or enhancement
+labels: ["type: feature", "status: needs triage"]
+title: "[Feature]: "
+body:
+  - type: input
+    id: summary
+    attributes: 
+      label: Summary
+      description: A summary of the feature you propose
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: >
+        Please provide details of the feature you are requesting.  Make sure to describe
+        it in as much detail as possible.
+    validations:
+      required: true
