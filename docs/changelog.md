@@ -15,6 +15,9 @@ uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
     planning, workflow support, branch-based development, Conventional Commits, and
     Semantic Versioning.
 
+-   **_Fix_**: Included `modules/config` in built wheels so isolated installs with
+    `pipx` and `uv tool` can import Retool's CLI modules.
+
 
 ## 2.4.9 (2026-03-14)
 

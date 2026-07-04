@@ -4,12 +4,12 @@
 *.xlsx
 debug.log
 __pycache__/
-clonelists/
-config/
-config/systems/*.yaml
-metadata/
-mias/
-retroachievements/
+/clonelists/
+/config/
+/config/systems/*.yaml
+/metadata/
+/mias/
+/retroachievements/
 
 !.gitattributes
 !.gitignore

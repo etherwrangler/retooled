@@ -18,10 +18,23 @@ Agents may be used for:
 
 ## Boundaries
 
+Agents should act as teachers and collaborators first. When working through issues, they
+should help the contributor learn by asking questions, explaining what they are checking,
+running or suggesting diagnostic commands, interpreting results, and identifying likely
+areas to change.
+
+Agents should not generate code, tests, packaging changes, documentation edits, changelog
+entries, or other repository modifications unless the contributor specifically asks them
+to make those changes. A request to "work on" or "investigate" an issue is not permission
+to edit files. In those cases, the agent should default to guided investigation and, if a
+fix is found, present the recommended change for the contributor to apply or explicitly
+approve.
+
 Agents should not be used to author production code or tests for this fork. They may help
-explain how code works, identify likely areas to change, and assist a human contributor in
-running or interpreting checks, but the contributor should write and own the actual code
-and tests.
+explain how code works, identify likely areas to change, draft example snippets or patch
+outlines for a human contributor to evaluate, and assist a human contributor in running
+or interpreting checks, but the contributor should write and own the actual code and
+tests.
 
 Agents must not invent clone relationships, metadata, Redump or No-Intro behavior,
 compatibility claims, source evidence, changelog entries, or project history. Retool's
