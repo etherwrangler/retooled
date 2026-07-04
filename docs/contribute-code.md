@@ -101,6 +101,27 @@ hatch run quick:regions
 To view all tests that you can run, see the `[tool.hatch.envs.quick.scripts]` section in
 `pyproject.toml`.
 
+## Check wheel and tool installs
+
+To build the wheel and check that importable modules are included:
+
+```
+uv build --wheel
+python3 -m zipfile --list dist/retool-*.whl | rg "modules/config"
+```
+
+To smoke-check isolated command installs:
+
+```
+pipx install --force .
+retool --help
+pipx uninstall Retool
+
+uv tool install --force .
+retool --help
+uv tool uninstall Retool
+```
+
 ## Enable developer mode
 
 If you create a file named `.dev` and place it in Retool's folder, the following options
